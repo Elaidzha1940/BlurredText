@@ -12,12 +12,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var blurRadius: CGFloat = 5
+    
     var body: some View {
         
+        ZStack {
+            Color("bg")
         VStack {
+                
+            Text("Be Patient")
+                .font()
             
             
+            }
         }
+        .ignoresSafeArea()
     }
 }
 
