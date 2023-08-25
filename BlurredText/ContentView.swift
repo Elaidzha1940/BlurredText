@@ -18,12 +18,17 @@ struct ContentView: View {
         
         ZStack {
             Color("bg")
-        VStack {
+            VStack {
                 
-            Text("Be Patient")
-                .font()
-            
-            
+                Text("Be Patient!")
+                    .font(.system(size: 60, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
+                    .blur(radius: blurRadius)
+                
+                Slider(value: $blurRadius, in: 0...15)
+                    .frame(width: 150)
+                    .accentColor(Color(UIColor.white))
+                
             }
         }
         .ignoresSafeArea()
